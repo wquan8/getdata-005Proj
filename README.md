@@ -1,15 +1,15 @@
 getdata-005Proj
 ===============
 
-course project for getdata-005
+Course project for getdata-005
 
 There are two R files. 
 
-dlRawData.R
+###dlRawData.R
 Download raw data if it does not exist and unzip the raw data
 Data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-run_analysis.R does the following. 
+####run_analysis.R does the following. 
 
 The implementation does not follow the exact order in the list, reference to R file for details, The content is listed below as order of requirements
 
@@ -29,3 +29,4 @@ The implementation does not follow the exact order in the list, reference to R f
   * - is replaced with .
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
   * this is implemented with ddply function from plyr library, 6 activity times 30 subject, total 180 rows. so the final dimension is 68 columns * 180 rows. numcolwise is the key to apply mean on all measurement columns.
+
